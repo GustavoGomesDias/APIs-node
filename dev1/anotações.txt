@@ -1,0 +1,31 @@
+24/11/2020
+
+{
+  "name": "dev1", [Nome da aplicação]
+  "version": "1.0.0", [Versão da aplicação]
+  "description": "", [Descrição da aplicação]
+  "main": "index.js", [Arq. prinicipal]
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" [scripts executáveis]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+No node, server é a própria aplicação, ou seja, tem a capacidade de se auto gerenciar (receber e responder request)
+
+
+dependencies --> Dependecias instaladas. Não se compartilha a node_modules, aí quem receber esse app, roda o comando "npm install" e instala esssas dependecias.
+
+Express -> MVC, models, controllers
+
+Http -> Ouvi e responde request
+
+require => jeito de importar do nodeJs
+
+const express = require('express'); => quando tá sem um caminho, ele busca na pasta node_modules
+
+const xpto = require('./express') => ao declarar um caminho, importa da aplicação e não do node_modules.
+
+('nodestr:server');
