@@ -29,3 +29,24 @@ const express = require('express'); => quando tá sem um caminho, ele busca na p
 const xpto = require('./express') => ao declarar um caminho, importa da aplicação e não do node_modules.
 
 ('nodestr:server');
+
+
+25/11/2020
+
+Scripts => Posso colocar os comandos que eu quiser executar e depois rodar com npm "nome-script"
+
+Nodemon => Reseta o server sempre que há um alteração.
+
+--save-dev => Só tem instaladi em quanto estiver em desenvolvimento e envia os arquivos insalados para uma dependencies diferente, pois não se precisa dela depois de terminar o desenvolvimento.
+
+Cód. Error
+201 => criado/created
+400 => bad request
+401 => não autenticado
+403 => Acesso negado
+
+Body Parser é para converter o retorno do body para json
+
+Put => normalmente é usado para atualizar algo
+
+Controller => Dada um requisão, quem faz a manipulação da mesma é um controller

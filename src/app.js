@@ -1,16 +1,17 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express(); /* Modelo MVC */
-
 const router = express.Router(); /* Arquivo de rotas */
 
-var route = router.get('/', (req, res, next) => {
-    res.status(200).send({
-        title: "Node Store API", // Título da API
-        version: "0.0.1" //Versão da API
-    });
-});
+//Carregar rotas
+const indexRoute = require('./routes/index');
+const productRoute = require('./routes/product');
 
-app.use('/', route);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false })); // Codifica a url
+
+app.use('/', indexRoute);
+app.use('/products', productRoute);
 
 module.exports = app; // Exportando app
