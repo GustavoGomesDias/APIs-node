@@ -49,4 +49,38 @@ Body Parser é para converter o retorno do body para json
 
 Put => normalmente é usado para atualizar algo
 
-Controller => Dada um requisão, quem faz a manipulação da mesma é um controller
+Controller => Dada um requisão, quem faz a manipulação da mesma é um controller.
+
+28/11/2020
+MongoDB - Não é um Db que trabalha com sql
+
+Recomendação de livro:
+NoSql Distiled - Martin Fowler
+Json vira um documento de uma collection
+Não há validação como no relacional
+
+Mongose => prover a criação de collections
+
+MVC => Models
+
+Schema => cria um id automaticamente
+
+trim (que está em product.js, onde criamos o schema para o DB) => remove os espaços antes e depois do título.
+
+slug => Item do produto que vai compor a url
+|_Tem índice (index) e unique(único)
+
+var product = new Product(req.body); // Simples e perigosa
+  Melhor jeito é passar um de cada vez
+    Ex.: product.title = req.body.title;
+
+.find({ active: true }, 'title price slug') => só vou pegar produtos active = true e só vai exibir title price slug.
+
+30/11/2020
+
+exports.getById... => vai puxar o produto pelo id.
+router.get('/admin/:id', controller.getById); => admin foi colocado por conta de que daria conflito com o outro com o slug
+
+findByIdAndUpdate => Usado para alterar um produto (diferente do outro já usado) e é mais prático.
+
+$set => taca o que veio da requisição para o que vai ser alterado do produto.
