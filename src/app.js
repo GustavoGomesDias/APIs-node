@@ -6,7 +6,7 @@ const app = express(); /* Modelo MVC */
 const router = express.Router(); /* Arquivo de rotas */
 
 // Conecta o banco de dados
-mongoose.connect('mongodb+srv://Gustavo:Gustavo@cluster0.gxstv.mongodb.net/API-NodeJs-Balta?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+mongoose.connect('mongodb+srv://Gustavo:Gustavo@cluster0.gxstv.mongodb.net/API-NodeJs-Balta?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
 
 // Carregar os Models
 const Product = require('./models/product');

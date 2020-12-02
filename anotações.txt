@@ -84,3 +84,11 @@ router.get('/admin/:id', controller.getById); => admin foi colocado por conta de
 findByIdAndUpdate => Usado para alterar um produto (diferente do outro já usado) e é mais prático.
 
 $set => taca o que veio da requisição para o que vai ser alterado do produto.
+
+01/12/2020
+
+A validação está toda dentro do model e por isso, caso precisassemos fazer chamada em outro serviço, essa validações não iriam passar. Criar um valadição fora do moongose (validators).
+
+02/12/2020
+
+Repositoty Pattern => Isola todo acesso a dados do app (controllers) que é simples e fácil de implementar. Cria-se algo que vai ao DB e retorna o que a gente precisa, ele é o responsável por cuidar do trafego de dados.
