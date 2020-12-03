@@ -92,3 +92,7 @@ A validação está toda dentro do model e por isso, caso precisassemos fazer ch
 02/12/2020
 
 Repositoty Pattern => Isola todo acesso a dados do app (controllers) que é simples e fácil de implementar. Cria-se algo que vai ao DB e retorna o que a gente precisa, ele é o responsável por cuidar do trafego de dados.
+
+03/12/2020
+
+then/catch é para tratar o fato do js retornar uma promise, eles servem para tratar como se irá trabalhar com ela.

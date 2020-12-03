@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://Gustavo:Gustavo@cluster0.gxstv.mongodb.net/API-N
 
 // Carregar os Models
 const Product = require('./models/product');
+const Customer = require('./models/customer');
 
 // Carregar rotas
 const indexRoute = require('./routes/index');
