@@ -11,15 +11,20 @@ mongoose.connect('mongodb+srv://Gustavo:Gustavo@cluster0.gxstv.mongodb.net/API-N
 // Carregar os Models
 const Product = require('./models/product');
 const Customer = require('./models/customer');
+const Order = require('./models/order');
 
 // Carregar rotas
 const indexRoute = require('./routes/index');
 const productRoute = require('./routes/route-product');
+const customerRoute = require('./routes/customer-route');
+const orderRoute = require('./routes/order-route');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })); // Codifica a url
 
 app.use('/', indexRoute);
 app.use('/products', productRoute);
+app.use('/customers', customerRoute);
+app.use('/orders', orderRoute);
 
 module.exports = app; // Exportando app

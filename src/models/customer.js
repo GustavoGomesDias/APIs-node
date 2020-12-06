@@ -14,7 +14,7 @@ const customerSchema = new Schema({
         type: String,
         required: true
     },
-    passwaord: {
+    password: {
         type: String,
         required: true
     }
