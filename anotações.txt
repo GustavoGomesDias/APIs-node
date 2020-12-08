@@ -101,3 +101,22 @@ then/catch é para tratar o fato do js retornar uma promise, eles servem para tr
 
 guid => Gera um número aleatório para o pedido.
 guid.raw().substring(0, 6) => Gera um número aleatório e pega os 6 primeiros números.
+
+
+07/12/2020
+
+global.SALT_KEY => chave secreta que fica apenas no nosso server e que é usada para gerar qualquer coisa que a gente venha a usar internamente. Ela é privada e secreta.
+
+md5(req.body.password + global.SALT_KEY) => vai encriptar a senha junto a uma hase gerada pea md5 e, além disso, vai somar essa senha gerada a chave global que só o server tem acesso.
+
+ATENÇÃo: Existe alguns passos que devem ser seguidos para se enviar email.
+
+SendGrid é quem oferece o serviço de envio de email aqui nessa aplicação.
+
+08/12/2020
+
+Não é muito legal colocar as imagens no DB, é melhor colocar o caminho até a imagem.
+
+Autentucação utilizando token no JWT (JSON Web Token) - Muitas empresas usam esse formato e que é encriptado com a nossa chave privada criada ateriormente.
+
+Tudo que colocamos no token na parte do customer, fica disponível para usar junto ao token onde em outros lugares

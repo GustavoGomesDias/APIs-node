@@ -1,12 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const config = require('./config')
 
 const app = express(); /* Modelo MVC */
 const router = express.Router(); /* Arquivo de rotas */
 
 // Conecta o banco de dados
-mongoose.connect('mongodb+srv://Gustavo:Gustavo@cluster0.gxstv.mongodb.net/API-NodeJs-Balta?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
+mongoose.connect(config.connectionString, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
 
 // Carregar os Models
 const Product = require('./models/product');
