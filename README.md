@@ -13,7 +13,7 @@ API desnvolvina durante o _Criando APIs com Node_ do site de cursos [Balta](http
 
 * Clone o repositório para sua máquina através do comando `$ git clone <url-do-repositorio>`;
 * No terminal, rode `$ npm install` para instalar todas as tecnologias usadas.
-
+![git-clone](https://github.com/GustavoGomesDias/APIs-node/blob/main/git-clone.png)
 ## Tecnologias usadas
 
 * Body-parser - Converte o retorno do body para json;
