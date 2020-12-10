@@ -1,5 +1,6 @@
-# nodeJS
+# NodeJS
 <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/><img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+
 API desnvolvina durante o _Criando APIs com Node_ do site de cursos [Balta](https://balta.io/).
 
 ## Navegar pelo README
@@ -32,4 +33,4 @@ API desnvolvina durante o _Criando APIs com Node_ do site de cursos [Balta](http
 * Não consegui implementar a imagem, pois precisava de um manager e não deu para criar uma conta no Azure da Microsoft;
 * Tirei a key do SendGrid (API de mandar email), por isso você terá que criar uma API no SendGrid e coloca-lá no sendgridKey em config.js, na pasta src.
 
-Criado por [![Twitter Badge](https://img.shields.io/badge/GustavoG%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Di3Gustavo) sobre a orientação do professsor [Balta](https://balta.io/).
+[![Twitter Badge](https://img.shields.io/badge/Gustavo%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Di3Gustavo)
